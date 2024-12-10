@@ -7,7 +7,7 @@ import random
 from jobspy import scrape_jobs
 
 # 🔍 Tiêu đề của ứng dụng
-st.title('🔍 Tìm kiếm công việc IT tại Việt Nam')
+st.title('🔍 Tìm kiếm công việc IT tại VN')
 
 # 📦 Nhập từ khóa tìm kiếm từ người dùng (không cho chỉnh địa điểm)
 st.sidebar.header('Nhập từ khóa công việc bạn muốn tìm')
