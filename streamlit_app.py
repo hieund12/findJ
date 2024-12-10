@@ -7,16 +7,18 @@ import random
 from jobspy import scrape_jobs
 
 # 🔍 Tiêu đề của ứng dụng
-st.title('🔍 Tìm kiếm công việc trực tuyến')
+st.title('🔍 Tìm kiếm công việc trực tuyến tại Việt Nam 🇻🇳')
 
-# 📦 Nhập từ khóa tìm kiếm từ người dùng
-st.sidebar.header('Nhập thông tin tìm kiếm')
+# 📦 Nhập từ khóa tìm kiếm từ người dùng (không cho chỉnh địa điểm)
+st.sidebar.header('Nhập từ khóa công việc bạn muốn tìm')
 search_term = st.sidebar.text_input('Nhập từ khóa công việc:', 'Cybersecurity Analyst')
-location = st.sidebar.text_input('Nhập địa điểm làm việc:', 'Vietnam')
+
+# Cố định địa điểm tìm kiếm là "Vietnam"
+location = 'Vietnam'
 
 # Nút bấm để bắt đầu tìm kiếm
 if st.sidebar.button('Tìm kiếm công việc'):
-    st.info(f'⏳ Đang tìm kiếm công việc với từ khóa **"{search_term}"** tại **"{location}"**. Vui lòng đợi trong giây lát...')
+    st.info(f'⏳ Đang tìm kiếm công việc với từ khóa **"{search_term}"** tại **"Vietnam"**. Vui lòng đợi trong giây lát...')
 
     # 🕒 Giảm tần suất gửi yêu cầu để tránh lỗi 429
     time.sleep(random.randint(10, 30))  # Đợi ngẫu nhiên từ 10 đến 30 giây
@@ -27,7 +29,7 @@ if st.sidebar.button('Tìm kiếm công việc'):
             site_name=["indeed", "linkedin", "glassdoor", "google"],  # Các trang web cần thu thập
             search_term=search_term,  # Từ khóa tìm kiếm
             google_search_term=f"{search_term} jobs in {location}",  # Từ khóa tìm kiếm trên Google
-            location=location,  # Địa điểm
+            location=location,  # Địa điểm cố định là Vietnam
             results_wanted=30,  # Số lượng kết quả mong muốn
             hours_old=720,  # Giới hạn thời gian đăng tin (30 ngày = 720 giờ)
             country_indeed='vietnam',  # Mã quốc gia cho Indeed
