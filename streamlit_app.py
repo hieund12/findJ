@@ -57,9 +57,15 @@ if st.sidebar.button('Tìm kiếm công việc'):
             # 🗂️ Xóa các dòng dữ liệu trống hoặc không hợp lệ
             df_jobs_filtered = df_jobs_filtered.dropna(subset=['title', 'company', 'job_url'])
 
+            # ✍️ Tạo cột "Xem chi tiết" có chứa link ứng tuyển
+            df_jobs_filtered['Xem chi tiết'] = df_jobs_filtered['job_url'].apply(lambda x: f'<a href="{x}" target="_blank">Xem chi tiết</a>')
+
+            # Ẩn cột "job_url" vì đã có "Xem chi tiết"
+            df_jobs_filtered = df_jobs_filtered[['title', 'company', 'date_posted', 'location', 'job_type', 'description', 'Xem chi tiết']]
+
             # 📘 Hiển thị dữ liệu công việc dưới dạng bảng để người dùng có thể dễ dàng đọc
             st.write("### 📋 Danh sách công việc")
-            st.dataframe(df_jobs_filtered)
+            st.markdown(df_jobs_filtered.to_html(escape=False, index=False), unsafe_allow_html=True)
 
             # 💾 Tải xuống tệp CSV
             csv = df_jobs_filtered.to_csv(index=False)
