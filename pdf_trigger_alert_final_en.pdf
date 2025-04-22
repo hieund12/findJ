@@ -1,0 +1,91 @@
+%PDF-1.3
+%âãÏÓ
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 3 0 R ]
+>>
+endobj
+2 0 obj
+<<
+/Producer (PyPDF2)
+/NeedAppearances true
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/Resources 6 0 R
+/Contents 8 0 R
+/MediaBox [ 0 0 595.28 841.89 ]
+>>
+endobj
+4 0 obj
+<<
+/Type /JavaScript
+/S /JavaScript
+/JS (app\056alert\050\042File\040opened\040successfully\041\040This\040is\040a\040message\040from\040embedded\040PDF\040JavaScript\056\042\051\073)
+/Length 87
+>>
+stream
+app.alert("File opened successfully! This is a message from embedded PDF JavaScript.");
+endstream
+endobj
+5 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/AcroForm 2 0 R
+/OpenAction 4 0 R
+>>
+endobj
+6 0 obj
+<<
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+/Font <<
+/F1 7 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+8 0 obj
+<<
+/Filter /FlateDecode
+/Length 116
+>>
+stream
+xœÌ±‚0à§øG]ÎCV£L&Ş\àÔ)M[”Ç'¬ßğÕè+CÃ¿º0N…­Éğ7ŞélÉ¶pmCÎGøí3î×£NsÈ%IÑŒ^~ò’ºê°?,Ù‡$F’¯¦BGğgo7÷û"
+
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000074 00000 n 
+0000000136 00000 n 
+0000000248 00000 n 
+0000000566 00000 n 
+0000000649 00000 n 
+0000000755 00000 n 
+0000000852 00000 n 
+trailer
+<<
+/Size 9
+/Root 5 0 R
+/Info 2 0 R
+>>
+startxref
+1040
+%%EOF
