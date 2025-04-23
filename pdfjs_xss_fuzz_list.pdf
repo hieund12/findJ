@@ -1,0 +1,37 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Annots [4 0 R 5 0 R 6 0 R 7 0 R] >>
+endobj
+4 0 obj
+<< /Type /Annot /Subtype /Link /Rect [50 750 550 770] /A << /S /URI /URI (javascript:alert('XSS1')) >> >>
+endobj
+5 0 obj
+<< /Type /Annot /Subtype /Text /Rect [50 700 550 720] /Contents (<img src=x onerror=alert('XSS2')>) >>
+endobj
+6 0 obj
+<< /Type /Annot /Subtype /Text /Rect [50 650 550 670] /Title (&#x3C;svg onload=alert`XSS3`&#x3E;) /Contents (XSS Test 3) >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Widget /Rect [50 600 550 620] /T (input1) /V (<svg><image href=x onerror=alert('XSS4') /></svg>) >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000159 00000 n 
+0000000309 00000 n 
+0000000459 00000 n 
+0000000609 00000 n 
+0000000759 00000 n 
+0000000909 00000 n 
+trailer
+<< /Root 1 0 R /Size 8 >>
+startxref
+739
+%%EOF

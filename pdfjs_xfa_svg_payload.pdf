@@ -1,0 +1,49 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /AcroForm 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] >>
+endobj
+3 0 obj
+<< /XFA 5 0 R /Fields [] >>
+endobj
+5 0 obj
+<< /Length 528 >>
+stream
+<?xml version="1.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/2.5/">
+    <subform name="page1">
+        <draw name="danger">
+            <value>
+              <text>
+                <![CDATA[
+                  <svg xmlns='http://www.w3.org/2000/svg'>
+                    <image href='x' onerror='alert(`XSS_XFA_PAYLOAD`)'/>
+                  </svg>
+                ]]>
+              </text>
+            </value>
+        </draw>
+    </subform>
+</template>
+</xdp:xdp>
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000129 00000 n 
+0000000249 00000 n 
+0000000369 00000 n 
+0000000489 00000 n 
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+824
+%%EOF

@@ -1,0 +1,40 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> /XObject << /X1 6 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 79 >>
+stream
+BT /F1 12 Tf 100 700 Td (Welcome to PDF.js) Tj ET
+q 1 0 0 1 100 500 cm /X1 Do Q
+endstream
+endobj
+6 0 obj
+<< /Type /XObject /Subtype /Form /FormType 1 /BBox [0 0 200 200] /Resources << >> /Length 100 >>
+stream
+<svg xmlns='http://www.w3.org/2000/svg'><image href='x' onerror='alert(`XSS_SVG_TRIGGERED`)'/></svg>
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000109 00000 n 
+0000000209 00000 n 
+0000000309 00000 n 
+0000000409 00000 n 
+0000000509 00000 n 
+trailer
+<< /Root 1 0 R /Size 7 >>
+startxref
+695
+%%EOF
